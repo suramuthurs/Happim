@@ -5,25 +5,27 @@ Happim stands for Handle Appimages.
 The recent appimage format of linux softwares are light-weighed and excellent in performance,
 But it has few drawbacks like:
 
-1. By default, it is not listed among list of linux programs.
+1. By default, it is not listed among list of linux programs(applications).
 2. It doesn't have any specific icons to identify.
 3. The appimage files are generally saved along with other files in our working directories. So due to oversight, there are chances of deletion of these files along with the other files.
 4. The idea of providing icons and placing among other program doesn't have any gui method and involves several steps. 
-5. For doing the above, one needs to have some technical knowledge
+5. Even if one wants to list it among other programs, he/she needs to have some technical knowledge
 
-If there is a gui software, these app-image programs could have been installed just with one or two clicks. So that the icon to launch the appimage program will be available among other programs. I expanded this idea and created this project.
+If there is a gui software, these app-image programs could have been installed just with one or two clicks. So that the icon to launch the appimage program will be available along with the other applications. I expanded this idea and created this project.
 
 # **Purpose:**
 	
 1. With Happim, You can install your favorite app-image applications
 	You can install your favorite appimage-applications just in few clicks. Installing involves:
 	1. Your favorite app-image applications are listed along with other programs installed so that you can directly launch your favorite app-image application by clicking.
-	2. Your favorite icon is allocated to each and every appimage application. So identifying each and every app-image application becomes verymuch easier.
+	2. Your favorite icon of every appimage application is allocated to the respective appimage application. So identifying each and every app-image application becomes verymuch easier.
 	3. All the appimage files installed is saved to a dedicated directory. And this directory is hidden by default. So deletion of these app-image files are avoided.
 	4. Even if you uninstall Happim, your appimage files are safely placed in another directory and you can continue using them with someother methods you prefer.
+ 	5. Trying and choosing among 2 or more appimage application of the same category is easier as you can uninstall your unwanted one anytime you want to.
+     	(For eg., Install two appimage application, both being video editor for instance, After trying for fe days, you can uninstall your unfavorite keeping the favorite) 
 	
 2. You can uninstall one or multiple app-image applications intalled:
-	If you are not comfortable in any of your appimage-application, You don't need to keep in your computer unnecessarilly. You can uninstall one or more appimage applications just with few clicks.
+	If you are not comfortable in any of your appimage-application, You don't need to keep it in your computer unnecessarilly. You can uninstall one or more appimage applications just with few clicks.
 	
 3. Uninstall happim:
 	If at all you're not happy with happim, you can uninstall the project completely. But it is ensured that all your app-image programs are stored in $Home/Appimages_installed_by_happim/ even after the uninstallation of Happim. So you can continue using your appimage-programs with your preferred method even after the removal of happim.
