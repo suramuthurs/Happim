@@ -15,142 +15,136 @@ If there is a gui software, these app-image programs could have been installed j
 
 # **Purpose:**
 	
-	1. With Happim, You can install your favorite app-image applications
+1. With Happim, You can install your favorite app-image applications
 	You can install your favorite appimage-applications just in few clicks. Installing involves:
-		1. Your favorite app-image applications are listed along with other programs installed so that you can directly launch your favorite app-image application by clicking.
-		2. Your favorite icon is allocated to each and every appimage application. So identifying each and every app-image application becomes verymuch easier.
-		3. All the appimage files installed is saved to a dedicated directory. And this directory is hidden by default. So deletion of these app-image files are avoided.
-		4. Even if you uninstall Happim, your appimage files are safely placed in another directory and you can continue using them with someother methods you prefer.
+	1. Your favorite app-image applications are listed along with other programs installed so that you can directly launch your favorite app-image application by clicking.
+	2. Your favorite icon is allocated to each and every appimage application. So identifying each and every app-image application becomes verymuch easier.
+	3. All the appimage files installed is saved to a dedicated directory. And this directory is hidden by default. So deletion of these app-image files are avoided.
+	4. Even if you uninstall Happim, your appimage files are safely placed in another directory and you can continue using them with someother methods you prefer.
 	
-	2. You can uninstall one or multiple app-image applications intalled:
-		If you are not comfortable in any of your appimage-application, You don't need to keep in your computer unnecessarilly. You can uninstall one or more appimage applications just with few clicks.
+2. You can uninstall one or multiple app-image applications intalled:
+	If you are not comfortable in any of your appimage-application, You don't need to keep in your computer unnecessarilly. You can uninstall one or more appimage applications just with few clicks.
 	
-	3. Uninstall happim:
-		If at all you're not happy with happim, you can uninstall the project completely. But it is ensured that all your app-image programs are stored in $Home/Appimages_installed_by_happim/ even after the uninstallation of Happim. So you can continue using your appimage-programs with your preferred method even after the removal of happim.
+3. Uninstall happim:
+	If at all you're not happy with happim, you can uninstall the project completely. But it is ensured that all your app-image programs are stored in $Home/Appimages_installed_by_happim/ even after the uninstallation of Happim. So you can continue using your appimage-programs with your preferred method even after the removal of happim.
 	
 # Tested Distros:
 Ubuntu 22.04, Fedora 39, Opensuse Leap 15.5, centOS.
 
 # prerequisites:
-	1. python3
-	2. python3-pip
-	3. python3-tk
-	4. python3-pil
-	5. xclip
-	6. pyperclip
+1. python3
+2. python3-pip
+3. python3-tk
+4. python3-pil
+5. xclip
+6. pyperclip
 	
 # **Installation:**
 
-**1. Update and install necessary packages:**
+## **1. Update and install necessary packages:**
 
-    __1. For Debian-based distributions (e.g., Ubuntu, Linux Mint):__
+### __1. For Debian-based distributions (e.g., Ubuntu, Linux Mint):__
    
-      	As sudo:
+As sudo:
       
-        ```
-        sudo apt -y update && sudo apt -y install python3 python3-pip python3-tk python3-pil python3-pil.imagetk xclip xsel libfuse2; pip3 install pyperclip
-        
-        ```
+```
+sudo apt -y update && sudo apt -y install python3 python3-pip python3-tk python3-pil python3-pil.imagetk xclip xsel libfuse2; pip3 install pyperclip
+```
 
-      As root:
+As root:
       
-        ```
-        apt -y update && apt -y install python3 python3-pip python3-tk python3-pil python3-pil.imagetk xclip xsel libfuse2; pip3 install pyperclip
-      
-        ```
 
-   __2. For Red Hat-based distributions (e.g., Fedora, CentOS):__
+```
+apt -y update && apt -y install python3 python3-pip python3-tk python3-pil python3-pil.imagetk xclip xsel libfuse2; pip3 install pyperclip
+```
+
+### __2. For Red Hat-based distributions (e.g., Fedora, CentOS):__
    
-	After this procedure, If you get any import-error, Please read the next topic Failure in installing prerequisites
+**After this procedure, If you get any import-error, Please read the next topic Failure in installing prerequisites**
    
-      As sudo:
+As sudo:
       
-        ```
-        sudo dnf -y install python3 python3-pip python3-tk python3-pillow python3-pillow-tk xclip xsel; pip3 install pyperclip
-      
-        ```
 
-      As root:
-      
-        ```
-        dnf -y install python3 python3-pip python3-tk python3-pillow python3-pillow-tk xclip xsel; pip3 install pyperclip
-      
-        ```
+```
+sudo dnf -y install python3 python3-pip python3-tk python3-pillow python3-pillow-tk xclip xsel; pip3 install pyperclip
+```
 
-   __3. For Arch Linux:__
+As root:
+      
+```
+dnf -y install python3 python3-pip python3-tk python3-pillow python3-pillow-tk xclip xsel; pip3 install pyperclip
+```
+
+### __3. For Arch Linux:__
    
-   	After this procedure, If you get any import-error, Please read the next topic Failure in installing prerequisites
+**After this procedure, If you get any import-error, Please read the next topic Failure in installing prerequisites**
 
    
-      As sudo:
+As sudo:
       
-        ```
-        sudo pacman -Sy --noconfirm python python-pip tk python-pillow xclip xsel; pip3 install pyperclip
-      
-        ```
+```
+sudo pacman -Sy --noconfirm python python-pip tk python-pillow xclip xsel; pip3 install pyperclip
+```
 
-      As root:
+As root:
       
-        ```
-        pacman -Sy --noconfirm python python-pip tk python-pillow xclip xsel; pip3 install pyperclip
-      
-        ```
+```
+pacman -Sy --noconfirm python python-pip tk python-pillow xclip xsel; pip3 install pyperclip
+```
 
-   __4. For openSUSE:__
+###  __4. For openSUSE:__
    
-   	**After this procedure, If you get any import-error, Please read the next topic Failure in installing prerequisites**
+**After this procedure, If you get any import-error, Please read the next topic Failure in installing prerequisites**
 
    
-      As sudo:
+As sudo:
       
-        ```
-        sudo zypper --non-interactive install python3 python3-pip python3-tk python3-pillow xclip xsel; pip3 install pyperclip
-      
-        ```
+```
+sudo zypper --non-interactive install python3 python3-pip python3-tk python3-pillow xclip xsel; pip3 install pyperclip
+```
 
-      As root:
+As root:
       
-        ```
-        zypper --non-interactive install python3 python3-pip python3-tk python3-pillow xclip xsel; pip3 install pyperclip
-      
-        ```
+```
+zypper --non-interactive install python3 python3-pip python3-tk python3-pillow xclip xsel; pip3 install pyperclip
+```
 
-   __5. For YUM-based distributions (e.g., RHEL, CentOS):__
+### __5. For YUM-based distributions (e.g., RHEL, CentOS):__
    
-   	After this procedure, If you get any import-error, Please read the next topic Failure in installing prerequisites
+**After this procedure, If you get any import-error, Please read the next topic Failure in installing prerequisites**
 
    
-      As sudo:
+As sudo:
       
-        ```
-        sudo yum -y install python3 python3-pip python3-tk python3-pillow xclip xsel; pip3 install pyperclip
-      
-        ```
+```
+sudo yum -y install python3 python3-pip python3-tk python3-pillow xclip xsel; pip3 install pyperclip
+```
 
-	As root:
+As root:
       
-        ```
-        yum -y install python3 python3-pip python3-tk python3-pillow xclip xsel; pip3 install pyperclip
-      
-        ```
+```
+yum -y install python3 python3-pip python3-tk python3-pillow xclip xsel; pip3 install pyperclip
+```
         
 Kindly modify the above commands as needed for your specific use case if required.
 
-**2. Troubles in installing prerequisites and Solution**
+## **2. Troubles in installing prerequisites and Solution**
 
-	Some linux distros give import error due to the python version change and change in the module application. In that case, the following method should be followed.
+Some linux distros give import error due to the python version change and change in the module application. In that case, the following method should be followed.
 	
-	**1. Access as root user.**
+### **1. Access as root user.**
 	If you know your su password, access as root by typing su. If you have only sudo access, you can very well create root access by typing the following in the terminal
 	
 ```
 sudo passwd
 ```
-	You will be prompted to type your current (sudo) password. Upon success, You will be prompted for your new password. Type your preferred password. Confirm it once again when you are prompted to confirm. This is your root password. Type su in the terminal. when prompted type your new root password and login.
+You will be prompted to type your current (sudo) password. Upon success, You will be prompted for your new password. Type your preferred password. Confirm it once again when you are prompted to confirm. This is your root password. Type su in the terminal. when prompted type your new root password and login.
 	
-	**2. Ensure python3 is installed by typing python3 --version
-	**3. Check for import Error
-		Type python3 in the terminal and you'll get into interactive mode. type:
+### **2. Ensure python3 is installed**
+by typing python3 --version in the terminal
+### **3. Check for import Error**
+Type python3 in the terminal and you'll get into interactive mode. type:
+
 ```
 import tkinter
 import PIL
@@ -159,73 +153,68 @@ import pyperclip
 
 If you get import error, the respective module needs to be installed.
 
-	**4. Install tkinter, pillow, pyperclip with the following method
+### **4. Install tkinter, pillow, pyperclip with the following method**
 	
-	Other methods give import error in some distros as i have seen
+Other methods give import error in some distros as i have seen
 	
 ```
 python3 -m pip install --upgrade pip;python3 -m pip install --upgrade Pillow; -m pip install --upgrade ; pip3 install python3-tk
 ```
 
-	**5. Install xclip
+### **5. Install xclip**
 	
+If the package manager is yum(like Fedora, rhel):
+
+```
+sudo yum install epel-release.noarch; sudo yum install xclip
 ```
 
-#If the package manager is yum(like Fedora, rhel):
+#### If the package manager is dnf(like centOS):
 
-sudo yum install epel-release.noarch; sudo yum install xclip
-
-
-#If the package manager is dnf(like centOS):
-
+```
 sudo dnf install epel-release; sudo dnf install xclip
+```
 
+#### If the package manager is zypper(like openSUSE):
 
-#If the package manager is zypper(like openSUSE):
-
+```
 zypper install xclip
+```
 
+#### If the package manager is pacman(like Arch linux and manjora):
 
-#If the package manager is pacman(like Arch linux and manjora):
-
+```
 pacman -Syu x-clip
 ```
 
 Now you can install Happim
 
-**3.Installation**
+## **3.Installation**
 
-__1. Git Clone from terminal__
+### __1. Git Clone from terminal__
 
-'''
-
+```
 git clone https://github.com/suramuthurs/Happim.git
+```
 
-'''
+### __2. Change directory to the downloaded directory:__
 
-__2. Change directory to the downloaded directory:__
-
-'''
-
+```
 cd Happim
+```
 
-'''
+### __3. Type the following to install__
 
-__3. Type the following to install__
-
-'''
-
+```
 python3 install.py
+```
 
-'''
-
-__4. When it prompts for sudo or root password, type the password and enter.The Happim application will be installed in seconds.__
-
+### __4. When it prompts for sudo or root password, type the password and enter.The Happim application will be installed in seconds.__
 
 Now you'll find the happim logo in the list of installed applications. You can add to your favorite by right-clicking it. 
 
 # **4. Usage:**
-**1.Installing App-image application:**
+## **1.Installing App-image application:**
 
 1. Download the required appimage file from its official website and download your preferred icon from the internet. Icon should be either png or jpg or jpeg formate.
 
@@ -243,7 +232,7 @@ Now you'll find the happim logo in the list of installed applications. You can a
 
 Your preferred Appimage-application now will be found in the list of applications. You can right-click and add to favorites if you want.
 
-**2. Uninstall one or multiple app-image application(s):**
+## **2. Uninstall one or multiple app-image application(s):**
 
 1. Select the tab 'Uninstall Apps'
 
@@ -255,7 +244,7 @@ Your preferred Appimage-application now will be found in the list of application
 
 5. You will be prompted whether you are sure to uninstall. Once you click 'Yes', the selected app-image applications will be uninstalled in seconds.
 
-**3. Uninstall Happim:**
+## **3. Uninstall Happim:**
 
 In case, if you are not satisfied with our app, You can very well uninstall it. No worries, All the Appimage-applications you installed will be saved in a separate folder even after uninstalling Happim. The folder in which your appimage-files saved will be $Home / Appimages_installed_by_happim/
 
