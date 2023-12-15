@@ -133,8 +133,10 @@ Kindly modify the above commands as needed for your specific use case if require
 Some linux distros give import error due to the python version change and change in the module application. In that case, the following method should be followed.
 	
 ### **1. Access as root user.**
+
 If you know your su password, access as root by typing su. If you have only sudo access, you can very well create root access by typing the following in the terminal
 	
+
 ```
 sudo passwd
 ```
